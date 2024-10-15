@@ -1,7 +1,7 @@
 # pptx-preview
 纯前端实现的pptx.js文件的预览库，支持npm方式安装，支持ES Module方式引入。
 
-[在线演示](https://501351981.github.io/pptx-preview/example/dist/)
+[在线演示](https://501351981.github.io/pptx-preview/examples/dist/)
 
 目前该库扔处在开发阶段，作者会及时同步进展，目前PPTX的预览功能支持情况如下：
 
@@ -67,6 +67,6 @@ fetch('test.pptx').then(response=>{
 
 为了更好地实现pptx文件预览的各种细节，本项目需要大家的支持，对于打赏50元以上的用户可向作者索要源码，打赏用户均可添加作者微信，交流该库或者前端领域话题。
 
-![](example/dist/wx.png)
+![](https://501351981.github.io/pptx-preview/examples/dist/wx.png)
 
 当然了，也感谢各位大佬的点赞~~
