@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "element-plus": "^2.8.5",
-    "pptx-preview": "^0.0.2",
+    "pptx-preview": "^0.0.3",
     "vue": "^3.4.37"
   },
   "devDependencies": {
