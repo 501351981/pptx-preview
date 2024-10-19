@@ -9,8 +9,11 @@ dependencies:
     specifier: ^2.8.5
     version: 2.8.5(vue@3.5.12)
   pptx-preview:
-    specifier: ^0.0.3
-    version: 0.0.3
+    specifier: ^0.0.5
+    version: 0.0.5
+  uuid:
+    specifier: ^10.0.0
+    version: 10.0.0
   vue:
     specifier: ^3.4.37
     version: 3.5.12(typescript@5.6.3)
@@ -795,19 +798,19 @@ packages:
     resolution: {integrity: sha1-2YRUqcN1PVeQhg8W9ohnueRr4f0=}
     dev: true
 
-  /picocolors@1.1.0:
-    resolution: {integrity: sha512-TQ92mBOW0l3LeMeyLV6mzy/kWr8lkd/hp3mTg7wYK7zJhuBStmGMBG0BdeDZS/dZx1IukaX6Bk11zcln25o1Aw==}
+  /picocolors@1.1.1:
+    resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
   /postcss@8.4.47:
     resolution: {integrity: sha512-56rxCq7G/XfB4EkXq9Egn5GCqugWvDFjafDOThIdMBsI15iqPqR5r15TfSr1YPYeEI19YeaXMCbY6u88Y76GLQ==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.7
-      picocolors: 1.1.0
+      picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  /pptx-preview@0.0.3:
-    resolution: {integrity: sha512-6Dv1duntYro2zu8vnIREKQjRY7AtSGJwG3A3By52pxC5YwzUwqKIuCuRmOTPeGIpCZguujtRTjNceEiPYPiq5w==}
+  /pptx-preview@0.0.5:
+    resolution: {integrity: sha512-QcHD2Bgm80msKaG/mZtlKUaKIWgzhznxXsUHLXsEP5aKRte4n4NNQ/Z+AmleByoWVfhCoXK309MSTXLmnQpHVw==}
     dependencies:
       jszip: 3.10.1
       lodash: 4.17.21
@@ -895,6 +898,11 @@ packages:
 
   /util-deprecate@1.0.2:
     resolution: {integrity: sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=}
+    dev: false
+
+  /uuid@10.0.0:
+    resolution: {integrity: sha512-8XkAphELsDnEGrDxUOHB3RGvXz6TeuYSGEZBOjtTtPm2lwhGBjLgOzLHB63IUWfBpNucQjND6d3AOudO+H3RWQ==}
+    hasBin: true
     dev: false
 
   /vite@5.4.9:
