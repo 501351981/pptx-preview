@@ -10,7 +10,7 @@ onMounted(()=>{
         width: 1200,
         height: window.innerHeight - 52
     })
-    fetch('/pptx-preview/examples/dist/1.pptx').then(response=>{
+    fetch('/pptx-preview/examples/dist/test.pptx').then(response=>{
        return response.arrayBuffer()
     }).then(res =>{
         pptxPreviewer.preview(res)
