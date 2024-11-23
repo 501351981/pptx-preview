@@ -9,8 +9,8 @@ dependencies:
     specifier: ^2.8.5
     version: 2.8.5(vue@3.5.12)
   pptx-preview:
-    specifier: ^0.0.12
-    version: 0.0.12
+    specifier: ^0.0.14
+    version: 0.0.14
   uuid:
     specifier: ^10.0.0
     version: 10.0.0
@@ -809,8 +809,8 @@ packages:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  /pptx-preview@0.0.12:
-    resolution: {integrity: sha512-gMl+3Ndv/N0eTDxRCYzKbRbwRpHVsl1KgXaqPJQca9gPFV64jujCtOmvDBHtt3rc7wKATCfT/fV2hOqH3PxGkA==}
+  /pptx-preview@0.0.14:
+    resolution: {integrity: sha512-dOtdfO49b7yPbs8N/Yumif3lFz89SsXlneGKxYIR7P7E2NwhIOjhYuYsg/gQ0A4LjBlbwlZCXxEYPfnQjRo8RQ==}
     dependencies:
       jszip: 3.10.1
       lodash: 4.17.21
