@@ -3,9 +3,11 @@ import {ref, onMounted} from 'vue'
 import {init} from 'pptx-preview'
 
 let domRef = ref()
+let loading = ref(false);
 let pptxPreviewer:any
 
 onMounted(()=>{
+    loading.value = true;
     pptxPreviewer = init(domRef.value, {
         width: 1200,
         height: window.innerHeight - 52
@@ -13,15 +15,20 @@ onMounted(()=>{
     fetch('/pptx-preview/examples/dist/test.pptx').then(response=>{
        return response.arrayBuffer()
     }).then(res =>{
-        pptxPreviewer.preview(res)
+        pptxPreviewer.preview(res).finally(()=>{
+            loading.value = false;
+        })
     })
 })
 
 function beforeUpload(file: any){
+    loading.value = true;
     let reader = new FileReader();
     reader.onload = (loadEvent) => {
         let arrayBuffer = loadEvent?.target?.result as ArrayBuffer;
-        pptxPreviewer.preview(arrayBuffer);
+        pptxPreviewer.preview(arrayBuffer).finally(()=>{
+            loading.value = false;
+        });
     };
     reader.readAsArrayBuffer(file);
 }
@@ -37,7 +44,7 @@ function beforeUpload(file: any){
         >
             <el-button type="primary" class="upload-button">选择要预览的pptx文件</el-button>
         </el-upload>
-        <div ref="domRef">
+        <div ref="domRef" v-loading="loading">
 
         </div>
     </div>
