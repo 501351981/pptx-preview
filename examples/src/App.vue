@@ -9,7 +9,7 @@ let pptxPreviewer:any
 onMounted(()=>{
     loading.value = true;
     pptxPreviewer = init(domRef.value, {
-        width: 1200,
+        width: Math.min(window.innerWidth, 960),
         height: window.innerHeight - 52
     })
     fetch('/pptx-preview/examples/dist/test.pptx').then(response=>{
@@ -44,7 +44,7 @@ function beforeUpload(file: any){
         >
             <el-button type="primary" class="upload-button">选择要预览的pptx文件</el-button>
         </el-upload>
-        <div ref="domRef" v-loading="loading">
+        <div ref="domRef" v-loading="loading" class="pptx-init-dom">
 
         </div>
     </div>
@@ -52,11 +52,15 @@ function beforeUpload(file: any){
 
 <style scoped>
 .wrapper {
-    width: 1200px;
-    margin: 0 auto;
+    width: 100vw;
     background: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
+.pptx-init-dom {
+    margin: 0 auto;
+}
 .upload-button {
     margin: 10px 0 10px 80px;
 }
