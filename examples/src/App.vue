@@ -26,8 +26,10 @@ function beforeUpload(file: any){
     let reader = new FileReader();
     reader.onload = (loadEvent) => {
         let arrayBuffer = loadEvent?.target?.result as ArrayBuffer;
+        console.log('预览开始', arrayBuffer);
         pptxPreviewer.preview(arrayBuffer).finally(()=>{
             loading.value = false;
+            console.log('预览结束');
         });
     };
     reader.readAsArrayBuffer(file);
