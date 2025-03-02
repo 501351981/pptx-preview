@@ -12,8 +12,8 @@ importers:
         specifier: ^2.8.5
         version: 2.8.5(vue@3.5.12(typescript@5.6.3))
       pptx-preview:
-        specifier: ^1.0.3
-        version: 1.0.3
+        specifier: ^1.0.4
+        version: 1.0.4
       uuid:
         specifier: ^10.0.0
         version: 10.0.0
@@ -499,8 +499,8 @@ packages:
     resolution: {integrity: sha512-56rxCq7G/XfB4EkXq9Egn5GCqugWvDFjafDOThIdMBsI15iqPqR5r15TfSr1YPYeEI19YeaXMCbY6u88Y76GLQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  pptx-preview@1.0.3:
-    resolution: {integrity: sha512-Mwc+woBZl+QcSHWU8N2Eg351goWq6Wvl/UiHvJlZnawFPUTmKAYIbjSNK6AUQ0h/meY7gc0QAAzKh6k6rYkbmw==}
+  pptx-preview@1.0.4:
+    resolution: {integrity: sha512-q2fTdqkh7b1fyGFAbBqjtVHqJKm7LWhHxI9Wc07AFrV2sz3IJDY1Ac5JBJA1R7+mtai65Uv9LFsHowrLDG0qIQ==}
 
   process-nextick-args@2.0.1:
     resolution: {integrity: sha1-eCDZsWEgzFXKmud5JoCufbptf+I=}
@@ -1023,7 +1023,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  pptx-preview@1.0.3:
+  pptx-preview@1.0.4:
     dependencies:
       echarts: 5.6.0
       jszip: 3.10.1
